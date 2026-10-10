@@ -1,0 +1,193 @@
+
+
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+
+  	<!-- OG meta tags -->
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+
+<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+<link rel="shortcut icon" href="./favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+<link rel="manifest" href="./site.webmanifest" />
+
+    <title>Gerald - Web Developer</title>
+    <!-- Tailwind CSS CDN with plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- BEGIN: CustomStyles -->
+    <style data-purpose="custom-theme">
+      /* Deep Corporate Dark Background Theme */
+      body {
+        background-color: #0f1115;
+        color: #e5e7eb;
+      }
+    </style>
+    <!-- END: CustomStyles -->
+  </head>
+  <body class="bg-[#0f1115] text-[#e5e7eb] min-h-screen flex flex-col font-sans selection:bg-emerald-500 selection:text-white">
+    <!-- BEGIN: MainHeader -->
+    <header class="w-full bg-[#161a22] border-b border-[#2d333f] sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+        <!-- EDIT: BRAND_NAME -->
+        <a class="text-xl md:text-2xl font-bold tracking-tight text-white hover:text-emerald-400 transition-colors" data-purpose="site-brand" href="#"> FCB Portfolio </a>
+        <!-- Main Navigation Menu -->
+        <nav aria-label="Main Navigation" data-purpose="site-navigation">
+          <ul class="flex items-center space-x-6 md:space-x-10 text-sm md:text-base font-medium text-gray-300">
+            <li>
+              <a class="hover:text-emerald-400 transition-colors" href="#about">About</a>
+            </li>
+            <li>
+              <a class="hover:text-emerald-400 transition-colors" href="#projects">Project</a>
+            </li>
+            <li>
+              <a class="hover:text-emerald-400 transition-colors" href="#skills-tools">Skill / Tools</a>
+            </li>
+            <li>
+              <a class="hover:text-emerald-400 transition-colors" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- END: MainHeader -->
+    <!-- BEGIN: MainContent -->
+    <main class="flex-grow w-full max-w-6xl mx-auto px-6 py-12 md:py-20 space-y-24 md:space-y-32">
+      <!-- BEGIN: HeroSection -->
+      <section class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 pt-4" data-purpose="hero-section" id="hero">
+        <!-- Avatar/Portrait Card -->
+        <div class="w-64 h-64 md:w-80 md:h-80 flex-shrink-0 rounded-2xl overflow-hidden border-2 border-emerald-500/40 bg-[#161a22] shadow-xl p-2 relative">
+          <img alt="Avatar" class="w-full h-full object-cover rounded-xl" src="./profile.png" />
+        </div>
+        <!-- Hero Introduction Content -->
+        <div class="flex flex-col items-center md:items-start text-center md:text-left max-w-xl space-y-4">
+          <!-- EDIT: YOUR_NAME -->
+          <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight"> GERALD </h1>
+          <!-- EDIT: JOB_TITLE -->
+          <h2 class="text-xl md:text-2xl font-semibold text-emerald-400"> WEB DEVELOPER </h2>
+          <!-- EDIT: SHORT_INTRODUCTION -->
+          <p class="text-gray-300 text-base md:text-lg leading-relaxed pt-1 pb-4"> Web developer specializing in responsive web design, front-end development, user-friendly websites, clean code, and modern web technologies. </p>
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 w-full">
+            <a class="px-6 py-3 bg-[#1e232d] hover:bg-emerald-600 border border-gray-700 hover:border-emerald-500 text-white font-medium rounded-lg text-sm transition-all duration-200 shadow-sm" data-purpose="cta-projects" href="#projects"> View My Project </a>
+            <a class="px-6 py-3 bg-[#1e232d] hover:bg-emerald-600 border border-gray-700 hover:border-emerald-500 text-white font-medium rounded-lg text-sm transition-all duration-200 shadow-sm" data-purpose="cta-contact" href="#contact"> Contact Me </a>
+          </div>
+        </div>
+      </section>
+      <!-- END: HeroSection -->
+      <!-- BEGIN: AboutSection -->
+      <section class="space-y-8" data-purpose="about-section" id="about">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-white tracking-tight"> About me </h2>
+        <!-- Large Rounded About Container Card -->
+        <div class="border-2 border-gray-600 rounded-3xl p-8 md:p-14 bg-[#12151b] shadow-lg flex items-center justify-center min-h-[220px]">
+          <!-- EDIT: ABOUT_YOU -->
+          <p class="text-gray-300 text-base md:text-lg leading-relaxed text-center max-w-3xl"> I am a passionate web developer who enjoys creating responsive, user-friendly, and visually appealing websites. I focus on clean code, modern design, and delivering a smooth user experience across all devices. </p>
+        </div>
+      </section>
+      <!-- END: AboutSection -->
+      <!-- BEGIN: ProjectsSection -->
+      <section class="space-y-8" data-purpose="projects-section" id="projects">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-white tracking-tight"> Projects </h2>
+        <!-- 3-Column Responsive Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Project Card 1 -->
+          <article class="bg-[#161a22] border border-[#2d333f] rounded-2xl overflow-hidden shadow-md flex flex-col" data-purpose="project-card">
+            <img alt="Project thumbnail" class="w-full h-48 object-cover" src="https://img.magnific.com/free-psd/template-concept-coffee-shop_23-2148436953.jpg" />
+            <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+              <div class="space-y-2">
+                <!-- EDIT: PROJECT_TITLE -->
+                <h3 class="text-xl font-bold text-white">Responsive Portfolio Website</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION -->
+                <p class="text-sm text-gray-400 leading-normal">A responsive web development project showcasing personal information, skills, and work samples with clean design and mobile-friendly layouts.</p>
+              </div>
+              <!-- EDIT: PROJECT_LINK -->
+              <a class="inline-block self-start px-5 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-sm rounded-lg transition-colors shadow-sm" href="#"> Project Link </a>
+            </div>
+          </article>
+          <!-- Project Card 2 -->
+          <article class="bg-[#161a22] border border-[#2d333f] rounded-2xl overflow-hidden shadow-md flex flex-col" data-purpose="project-card">
+            <img alt="Project thumbnail" class="w-full h-48 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4NdRvBMrpLFphRYj72JERCfsgugPxv7OjuPaixj9_BAQT5wvnFhE5FnSN&s=10" />
+            <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+              <div class="space-y-2">
+                <!-- EDIT: PROJECT_TITLE -->
+                <h3 class="text-xl font-bold text-white">E-Commerce Website Design and Development</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION -->
+                <p class="text-sm text-gray-400 leading-normal">Create a user-friendly e-commerce website featuring product listings, search functionality, shopping cart integration, and responsive design to help businesses establish an online presence and simplify the customer shopping experience.</p>
+              </div>
+              <!-- EDIT: PROJECT_LINK -->
+              <a class="inline-block self-start px-5 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-sm rounded-lg transition-colors shadow-sm" href="#"> Project Link </a>
+            </div>
+          </article>
+          <!-- Project Card 3 -->
+          <article class="bg-[#161a22] border border-[#2d333f] rounded-2xl overflow-hidden shadow-md flex flex-col" data-purpose="project-card">
+            <img alt="Project thumbnail" class="w-full h-48 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdDWmgjJZRtKBRUKfSl7RaZ592n0YDBv9f7piV6xqHdRlBLqeFMQer8AEh&s=10" />
+            <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+              <div class="space-y-2">
+                <!-- EDIT: PROJECT_TITLE -->
+                <h3 class="text-xl font-bold text-white">Web Application and Database Management System</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION -->
+                <p class="text-sm text-gray-400 leading-normal">Develop a dynamic web application using PHP, MySQL, and JavaScript to manage records, automate data entry, and streamline information retrieval, providing an efficient and organized solution for everyday business operations.</p>
+              </div>
+              <!-- EDIT: PROJECT_LINK -->
+              <a class="inline-block self-start px-5 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-sm rounded-lg transition-colors shadow-sm" href="#"> Project Link </a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- END: ProjectsSection -->
+      <!-- BEGIN: SkillsAndToolsSection -->
+      <section class="space-y-8" data-purpose="skills-and-tools-section" id="skills-tools">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-white tracking-tight"> Skill and Tools </h2>
+        <!-- Two Side-by-Side Tables/Cards matching wireframe style -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <!-- Skills Card -->
+          <div class="border border-gray-600 rounded-lg overflow-hidden bg-[#161a22]" data-purpose="skills-card">
+            <div class="border-b border-gray-600 py-3 px-4 text-center bg-[#1c212b]">
+              <h3 class="text-base font-semibold text-white">Skills</h3>
+            </div>
+            <ul class="p-4 space-y-2 text-sm text-gray-300">
+              <li class="py-1 border-b border-gray-700/50 last:border-0">Responsive Web Design</li>
+              <li class="py-1 border-b border-gray-700/50 last:border-0">Front-End Web Development (HTML, CSS, JavaScript)</li>
+              <li class="py-1 border-b border-gray-700/50 last:border-0">Back-End Web Development</li>
+            </ul>
+          </div>
+          <!-- Tools Card -->
+          <div class="border border-gray-600 rounded-lg overflow-hidden bg-[#161a22]" data-purpose="tools-card">
+            <div class="border-b border-gray-600 py-3 px-4 text-center bg-[#1c212b]">
+              <h3 class="text-base font-semibold text-white">Tools / Technologies</h3>
+            </div>
+            <ul class="p-4 space-y-2 text-sm text-gray-300">
+              <li class="py-1 border-b border-gray-700/50 last:border-0">Visual Studio Code</li>
+              <li class="py-1 border-b border-gray-700/50 last:border-0">Git and GitHub</li>
+              <li class="py-1 border-b border-gray-700/50 last:border-0">Google Chrome Developer Tools</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- END: SkillsAndToolsSection -->
+      <!-- BEGIN: ContactSection -->
+      <section class="space-y-8" data-purpose="contact-section" id="contact">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-white tracking-tight"> Contact </h2>
+        <!-- Large Rounded Contact Card Container -->
+        <div class="border-2 border-gray-600 rounded-3xl p-8 md:p-14 bg-[#12151b] shadow-lg flex flex-col items-center justify-center text-center space-y-3 min-h-[220px]">
+          <!-- EDIT: YOUR_EMAIL -->
+          <p class="text-base md:text-lg text-gray-300"> Email: geraldalbinda6@gmail.com </p>
+          <!-- EDIT: YOUR_CONTACT -->
+          <p class="text-base md:text-lg text-gray-300"> Contact: 09154596182 </p>
+          <!-- EDIT: YOUR_SOCIAL_LINK -->
+          <a class="text-emerald-400 hover:text-emerald-300 font-medium text-base md:text-lg underline underline-offset-4 transition-colors" href="#"> Your Social Link </a>
+        </div>
+      </section>
+      <!-- END: ContactSection -->
+    </main>
+    <!-- END: MainContent -->
+    <!-- BEGIN: MainFooter -->
+    <footer class="w-full border-t border-gray-700/80 bg-[#0d0f13] py-6 text-center text-sm md:text-base text-gray-300" data-purpose="footer">
+      <div class="max-w-6xl mx-auto px-6"> © 2003  Gerald. All rights reserved. 
+ </div>
+    </footer>
+    <!-- END: MainFooter -->
+  </body>
+</html>
